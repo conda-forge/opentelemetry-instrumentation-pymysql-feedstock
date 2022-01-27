@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-instrumentation-pymysql" %}
-{% set version = "0.27b0" %}
+{% set version = "0.28b0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/opentelemetry-instrumentation-pymysql-{{ version }}.tar.gz
-  sha256: b6f50c68fde5bdb73c1fc986d174ee468368e0ddc768c57228200d688e4a636f
+  sha256: d78998be7dd46c2bb848779b27b77b495a041af9ec963b51530e2c9736d42b64
 
 build:
   number: 0
@@ -21,8 +21,8 @@ requirements:
     - python >=3.6
   run:
     - opentelemetry-api ~=1.3
-    - opentelemetry-instrumentation ==0.27b0
-    - opentelemetry-instrumentation-dbapi ==0.27b0
+    - opentelemetry-instrumentation ==0.28b0
+    - opentelemetry-instrumentation-dbapi ==0.28b0
     - python >=3.6
     # - pymysql ~=0.10.1
     # - opentelemetry-test ==0.24b0
@@ -32,6 +32,8 @@ requirements:
     # - opentelemetry-test-utils ==0.26b1
     # - pymysql <2
     # - opentelemetry-test-utils ==0.27b0
+    # - pymysql <2
+    # - opentelemetry-test-utils ==0.28b0
 
 test:
   imports:
